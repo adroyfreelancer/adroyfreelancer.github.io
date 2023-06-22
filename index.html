@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chitrali Publications- You Can Draw</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<script src="https://kit.fontawesome.com/2337362ad2.js" crossorigin="anonymous"></script>
+<!-- Hub Spot Contact Us Form Embed-->
+<script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "40024429",
+    formId: "3ebbdaa3-b496-49e3-a7ee-0fe4f68692cd",
+    target: "#hubspotForm"
+  });
+</script>
+<style>
+  
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size:cover;
+  background-image: url("banner-background.jpg");  
+  min-height: 100%;
+}
+.bgimg-1::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.6);
+}
+.w3-bar .w3-button {
+  padding: 16px 16px 5px 16px;
+}
+#tinifiedImg:hover{
+  opacity:0.5;
+  cursor:pointer;
+}
+.small-padding-button{
+  border: none;
+  display: inline-block;
+  padding: 4px 8px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+/* change navbar item color on scrolling past the header */
+#myNavbar.scrolled{
+  /*background:rgb(218, 212, 247);   */
+  color:#341809;
+}
+.google-map {
+    border:2px solid red;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+     height: 100%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     position: absolute;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div id="myNavbar" class="w3-bar w3-text-white">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><img id="logo" src="Assets/tinified/logo-100w.jpg" width="75px"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#books" class="w3-bar-item w3-button"><i class="fa-solid fa-book-open"></i> BOOKS</a>
+      <a href="#schools" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SCHOOLS</a>
+      <!--<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>-->
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large" 
+style="height:50vh;width:35vw;background-color:#98CA32;display:none" id="mySidebar">
+  <div class="w3-bar w3-dark-grey w3-padding">
+    <div class="w3-bar-item w3-display-container">
+        <div class="w3-display-left">CLOSE</div>
+        <div onclick="w3_close()" class="w3-button w3-display-right" title="close Sidebar" style="padding-bottom:14px;">
+        <i class="fa-solid fa-square-xmark fa-xl" style="color: #ff9800;"></i>
+        </div>
+    </div>    
+  </div>
+  <div class="w3-bar-block">
+  <!--<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close <i class="fa-solid fa-square-xmark fa-2xl" style="color: #ff9800"></i></a>-->  
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-opacity w3-border-bottom">HOME</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-opacity w3-border-bottom">ABOUT</a>
+    <a href="#books" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-opacity w3-border-bottom">BOOKS</a>
+    <a href="#schools" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-opacity w3-border-bottom">SCHOOLS</a>
+    <!--<a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-opacity w3-border-bottom">PRICING</a>-->
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-opacity w3-border-bottom">CONTACT</a>
+  </div>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px;">
+    <div class="w3-jumbo w3-hide-small" style="width:100%;font-weight:800;">Chitrali Publications</div>
+    <div class="w3-xxxlarge w3-hide-large w3-hide-medium" style="width:100%;font-weight:600;">Chitrali Publications</div><br>
+    <div class="w3-container">
+      <span class="w3-xxxlarge w3-hide-small" style="font-weight:800;">You Can Draw!</span>
+      <span class="w3-xlarge w3-hide-large w3-hide-medium" style="font-weight:600;">You Can Draw!</span>
+      <p class="w3-large">Art book series for children.</p>
+    </div>
+    
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Explore to know more</a></p>
+  </div> 
+  
+    
+  
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <!--<i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>-->
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center w3-text-indigo" style="font-weight:bolder;">YOU CAN DRAW!</h3>
+  <p class="w3-center w3-large w3-deep-orange" style="font-weight:bolder;">Key features of our books</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa-solid fa-stairs w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large w3-panel w3-light-grey">Step by step approach</p>
+      <p>Learning art made easy with step by step approach with easy to follow instructions.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa-solid fa-person-digging w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large w3-panel w3-light-grey">Foundational course</p>
+      <p>It is a foundational course on art for children which lays a solid base for their creative pursuits in future.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa-solid fa-arrows-to-eye w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large w3-panel w3-light-grey">Improves concentration</p>
+      <p>Beneficial for children with concentration issues. Learning art helps children with attention deficit or hyperactivity disorders to calm down and be focussed.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-palette w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large w3-panel w3-light-grey">Skills taught</p>
+      <p>Pencil shading, drawing and colouring human figures, animals, objects and landscapes, paper-craft, paper-collage and clay-modelling</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<!--<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We know design.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Books</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="/tinified/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>-->
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:64px 16px;background-color: #DAD4F7;" id="books">
+  <h3 class="w3-center w3-text-indigo" style="font-weight:bolder;">OUR BOOKS</h3>
+  <p class="w3-center w3-large w3-deep-orange" style="font-weight:bolder;">Click each one to preview.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img id="tinifiedImg" src="Assets/tinified/V1.jpg" onclick="openModal('V1.jpg');" alt="You Can Draw- Volume 1" style="width:100%;">
+        <div class="w3-container w3-light-grey">
+          <h4 style="font-weight:bolder;">You Can Draw- Volume 1</h4>
+          <h5 class="w3-text-deep-orange" style="font-weight:600;">For age group: 4+ to 6+ yrs</h5>
+          <h6 class="w3-monospace">Price: Rs 150</h6>   
+          <button onclick="showDescription('desc1')" class="w3-button w3-light-grey w3-border w3-border-orange w3-block">Read more</button>                     
+          <p id="desc1" class="w3-container w3-hide">
+            A colouring book of 20 pages in which kids have to colour already drawn cartoon humans, animals, etc with colour pencils, wax crayons or oil pastels.
+          </p>          
+          <p><button class="w3-button w3-orange w3-block" onclick="openModal('V1.jpg');"><i class="fa-solid fa-magnifying-glass"></i> Preview</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img id="tinifiedImg" src="Assets/tinified/V2.jpg" onclick="openModal('V2.jpg');" alt="You Can Draw- Volume 2" style="width:100%">
+        <div class="w3-container w3-light-grey">
+          <h4 style="font-weight:bolder;">You Can Draw- Volume 2</h4>
+          <h5 class="w3-text-deep-orange" style="font-weight:600;">For age group: 5+ to 7+ yrs</h5>
+          <h6 class="w3-monospace">Price: Rs 150</h6>   
+          <button onclick="showDescription('desc2')" class="w3-button w3-light-grey w3-border w3-border-orange w3-block">Read more</button>                     
+          <p id="desc2" class="w3-container w3-hide">
+            Humans, animals, landscapes are drawn with dotted lines. Kids have to draw with pencil along these dotted lines and colour with wax crayons, oil pastels or colour pencils.
+          </p>  
+          <p><button class="w3-button w3-orange w3-block" onclick="openModal('V2.jpg');"><i class="fa-solid fa-magnifying-glass"></i> Preview</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img id="tinifiedImg" src="Assets/tinified/V3.jpg" onclick="openModal('V3.jpg');" alt="You Can Draw- Volume 3" style="width:100%">
+        <div class="w3-container w3-light-grey">
+          <h4 style="font-weight:bolder;">You Can Draw- Volume 3</h4>
+          <h5 class="w3-text-deep-orange" style="font-weight:600;">For age group: 6+ to 8+ yrs</h5>
+          <h6 class="w3-monospace">Price: Rs 300</h6>   
+          <button onclick="showDescription('desc3')" class="w3-button w3-light-grey w3-border w3-border-orange w3-block">Read more</button>                     
+          <p id="desc3" class="w3-container w3-hide">
+            48 pages book with step by step, easy to understand approach to draw, colour and paint humans, animals, birds, landscapes. Also included pencil shading, paper craft, paper collage, clay modelling and stencil printing.
+          </p>  
+          <p><button class="w3-button w3-orange w3-block" onclick="openModal('V3.jpg');"><i class="fa-solid fa-magnifying-glass"></i> Preview</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img id="tinifiedImg" src="Assets/tinified/V4.jpg" onclick="openModal('V4.jpg');" alt="You Can Draw- Volume 4" style="width:100%">
+        <div class="w3-container w3-light-grey">
+          <h4 style="font-weight:bolder;">You Can Draw - Volume 4</h4>
+          <h5 class="w3-text-deep-orange" style="font-weight:600;">For age group: 7+ to 9+ yrs</h5>
+          <h6 class="w3-monospace">Price: Rs 300</h6>   
+          <button onclick="showDescription('desc4')" class="w3-button w3-light-grey w3-border w3-border-orange w3-block">Read more</button>                     
+          <p id="desc4" class="w3-container w3-hide">
+            48 pages book with step by step, easy to understand approach to draw, colour and paint humans, animals, birds, landscapes. Also included pencil shading, paper craft, paper collage, clay modelling and stencil printing.
+          </p>
+          <p><button class="w3-button w3-orange w3-block" onclick="openModal('V4.jpg');"><i class="fa-solid fa-magnifying-glass"></i> Preview</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img id="tinifiedImg" src="Assets/tinified/V5.jpg" onclick="openModal('V5.jpg');" alt="You Can Draw- Volume 5" style="width:100%">
+        <div class="w3-container w3-light-grey">
+          <h4 style="font-weight:bolder;">You Can Draw - Volume 5</h4>
+          <h5 class="w3-text-deep-orange" style="font-weight:600;">For age group: 8+ to 10+ yrs</h5>
+          <h6 class="w3-monospace">Price: Rs 300</h6>   
+          <button onclick="showDescription('desc5')" class="w3-button w3-light-grey w3-border w3-border-orange w3-block">Read more</button>                     
+          <p id="desc5" class="w3-container w3-hide">
+            48 pages book with step by step, easy to understand approach to draw, colour and paint humans, animals, birds, landscapes. Also included pencil shading, paper craft, paper collage, clay modelling and stencil printing.
+          </p>
+          <p><button class="w3-button w3-orange w3-block" onclick="openModal('V5.jpg');"><i class="fa-solid fa-magnifying-glass"></i> Preview</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img id="tinifiedImg" src="Assets/tinified/V6.jpg" onclick="openModal('V6.jpg');" alt="You Can Draw- Volume 6" style="width:100%">
+        <div class="w3-container w3-light-grey">
+          <h4 style="font-weight:bolder;">You Can Draw - Volume 6</h4>
+          <h5 class="w3-text-deep-orange" style="font-weight:600;">For age group: 9+ to 11+ yrs</h5>
+          <h6 class="w3-monospace">Price: Rs 300</h6>   
+          <button onclick="showDescription('desc6')" class="w3-button w3-light-grey w3-border w3-border-orange w3-block">Read more</button>                     
+          <p id="desc6" class="w3-container w3-hide">
+            48 pages book with step by step, easy to understand approach to draw, colour and paint humans, animals, birds, landscapes. Also included pencil shading, paper craft, paper collage, clay modelling and stencil printing.
+          </p>
+          <p><button class="w3-button w3-orange w3-block" onclick="openModal('V6.jpg');"><i class="fa-solid fa-magnifying-glass"></i> Preview</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-padding-64" style="background-color:#98CA32;">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">25000+</span>
+    <br>Books sold
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">6000+</span>
+    <br>Happy Parents
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">15+</span>
+    <br>Schools
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">10+</span>
+    <br>Sellers
+  </div>
+</div>
+
+<!-- Schools Section -->
+<div class="w3-container" style="padding:128px 16px" id="schools">
+  <h3 class="w3-center w3-text-indigo" style="font-weight:bolder;">List of Schools</h3>
+  <!--<p class="w3-center w3-large w3-vivid-reddish-orange">‘You Can Draw!’ art-book series is included in the academic booklist of some reputed schools.</p>-->
+  <div class="w3-container">
+    <div class="w3-panel w3-light-grey">‘You Can Draw!’ art-book series is included in the academic booklist of some reputed schools.</div>
+    <ul class="w3-ul w3-card-4">
+      <li class="w3-cell-row">        
+        <div class="w3-cell">
+          <i class="fa-solid fa-school w3-xlarge w3-hide-small w3-center w3-margin-right" style="color: #0550ff;"></i>
+          <i class="fa-solid fa-school w3-large w3-hide-large w3-hide-medium w3-center w3-margin-right" style="color: #0550ff;"></i>                    
+        </div>
+        <div class="w3-cell"><span class="w3-large">Salt Lake School, CA Block, Kolkata</span></div>
+      </li>
+  
+      <li class="w3-cell-row">
+        <div class="w3-cell">
+          <i class="fa-solid fa-school w3-xlarge w3-hide-small w3-center w3-margin-right" style="color: #0550ff;"></i>
+          <i class="fa-solid fa-school w3-large w3-hide-large w3-hide-medium w3-center w3-margin-right" style="color: #0550ff;"></i>                    
+        </div>
+        <div class="w3-cell"><span class="w3-large">Scottish Church School Kolkata</span></div>
+      </li>
+  
+      <li class="w3-cell-row">
+        <div class="w3-cell">
+          <i class="fa-solid fa-school w3-xlarge w3-hide-small w3-center w3-margin-right" style="color: #0550ff;"></i>
+          <i class="fa-solid fa-school w3-large w3-hide-large w3-hide-medium w3-center w3-margin-right" style="color: #0550ff;"></i>                    
+        </div>
+        <div class="w3-cell"><span class="w3-large">Salt Lake Point School, Kolkata</span></div>
+      </li>
+
+      <li class="w3-cell-row">
+        <div class="w3-cell">
+          <i class="fa-solid fa-school w3-xlarge w3-hide-small w3-center w3-margin-right" style="color: #0550ff;"></i>
+          <i class="fa-solid fa-school w3-large w3-hide-large w3-hide-medium w3-center w3-margin-right" style="color: #0550ff;"></i>                   
+        </div>
+        <div class="w3-cell"><span class="w3-large">Bidhan Nagar Municipal School, Kolkata</span> </div>
+      </li>
+
+      <li class="w3-cell-row">
+        <div class="w3-cell">
+          <i class="fa-solid fa-school w3-xlarge w3-hide-small w3-center w3-margin-right" style="color: #0550ff;"></i>
+          <i class="fa-solid fa-school w3-large w3-hide-large w3-hide-medium w3-center w3-margin-right" style="color: #0550ff;"></i>                    
+        </div>
+        <div class="w3-cell"><span class="w3-large">Jewish Girls School, Park Street Kolkata</span></div>
+      </li>
+
+      <li class="w3-cell-row">
+        <div class="w3-cell">
+          <i class="fa-solid fa-school w3-xlarge w3-hide-small w3-center w3-margin-right" style="color: #0550ff;"></i>
+          <i class="fa-solid fa-school w3-large w3-hide-large w3-hide-medium w3-center w3-margin-right" style="color: #0550ff;"></i>                   
+        </div>
+        <div class="w3-cell"><span class="w3-large">IEM Public School Salt Lake, Kolkata</span></div>
+      </li>
+    </ul>
+  </div>
+  
+
+  
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal_preview" class="w3-modal w3-display-container">  
+   
+  <div class="w3-modal-content w3-center w3-display-container">
+    <div class="w3-display-container w3-margin pages">
+      <img id="img_page1" class="w3-section" style="width:100%;">
+      <div class="w3-panel">
+        <p id="book_page1_caption" class="w3-display-bottommiddle w3-text-black w3-block" ></p>
+      </div>
+    </div>
+    <div class="w3-display-container w3-margin pages">
+      <img id="img_page2" class="w3-section" style="width:100%;">
+      <div class="w3-panel">
+        <p id="book_page2_caption" class="w3-display-bottommiddle w3-text-black w3-block" ></p>
+      </div>
+    </div>
+    <div class="w3-display-container w3-margin pages">
+      <img id="img_page3" class="w3-section" style="width:100%;">
+      <div class="w3-panel">
+        <p id="book_page3_caption" class="w3-display-bottommiddle w3-text-black w3-block" ></p>
+      </div>
+    </div>
+    <button class="w3-button w3-display-left w3-light-grey w3-hide-small w3-hide-medium" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-display-right w3-light-grey w3-hide-small w3-hide-medium" onclick="plusDivs(1)">Next ❯</button>
+    
+    <button class="w3-button w3-display-left w3-light-grey w3-hide-large" onclick="plusDivs(-1)">❮</button>
+    <button class="w3-button w3-display-right w3-light-grey w3-hide-large" onclick="plusDivs(1)">❯</button>
+
+    <span onclick="document.getElementById('modal_preview').style.display='none'"
+     class="w3-button w3-display-topright w3-margin-bottom w3-hide-small">
+     <i class="fa-solid fa-square-xmark fa-2xl" style="color: #ff9800"></i></span>
+
+     <span onclick="document.getElementById('modal_preview').style.display='none'"
+     class="small-padding-button w3-display-topright w3-margin-bottom w3-hide-large w3-hide-medium">
+     <i class="fa-solid fa-square-xmark" style="color: #ff9800"></i></span> 
+  </div>
+</div>
+
+<!-- Skills Section -->
+<!--<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Our Skills.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div>-->
+
+<!-- Pricing Section -->
+<!--
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>PRICING</h3>
+  <p class="w3-large">Choose a pricing plan that fits your needs.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 10</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">Pro</li>
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 25</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Emails</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 50</h2>
+          <span class="w3-opacity">per month</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+-->
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center w3-text-indigo" style="font-weight:bolder;">CONTACT US</h3>
+  <p class="w3-center w3-large w3-deep-orange" style="font-weight:bolder;">Lets get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    
+    <div class="w3-container" style="padding:0px 16px;">
+      <div id="hubspotForm"></div>
+    </div>    
+    <p class="w3-center w3-large w3-deep-orange" style="font-weight:bolder;margin-bottom: 64px;">Call Us / Email Us / Locate Us</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +9123878508</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: rajarshidattaroy@mail.com</p>
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> F-14/1, karunamoyee, Salt Lake, Kolkata, India</p>
+    <br>
+    <!-- Image of location/map -->
+    <div class="google-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d117884.22019506997!2d88.3492394!3d22.5835207!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275c0c382b0a3%3A0xbbf2c571162069fb!2sF-14%2C%20FE%20Rd%2C%20ED%20Block%2C%20Sector%20II%2C%20Bidhannagar%2C%20Kolkata%2C%20West%20Bengal%20700091!5e0!3m2!1sen!2sin!4v1687186298466!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!--<img src="/tinified/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">-->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-green w3-padding-64" style="margin-top:-50px;">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function closeModal(){
+  document.getElementById("modal_preview").style.display = "none";
+}
+function openModal(coverpage){
+  let src1="";
+  let src2="";
+  let src3="";
+  let book_page_caption="";
+  if(coverpage == "V1.jpg"){
+    src1 = 'Assets/pages/V1-1.jpg';
+    src2 = 'Assets/pages/V1-2.jpg';
+    src3 = 'Assets/pages/V1-3.jpg';
+    book_page1_caption = "You Can Draw- Volume 1 (4+ to 6+ yrs)";
+    book_page2_caption = "You Can Draw- Volume 1 (4+ to 6+ yrs)";
+    book_page3_caption = "You Can Draw- Volume 1 (4+ to 6+ yrs)";
+  }
+  if(coverpage == "V2.jpg"){
+    src1 = 'Assets/pages/V2-1.jpg';
+    src2 = 'Assets/pages/V2-2.jpg';
+    src3 = 'Assets/pages/V2-3.jpg';
+    book_page1_caption = "You Can Draw- Volume 2 (5+ to 7+ yrs)";
+    book_page2_caption = "You Can Draw- Volume 2 (5+ to 7+ yrs)";
+    book_page3_caption = "You Can Draw- Volume 2 (5+ to 7+ yrs)";
+  }
+  if(coverpage == "V3.jpg"){
+    src1 = 'Assets/pages/V3-1.jpg';
+    src2 = 'Assets/pages/V3-2.jpg';
+    src3 = 'Assets/pages/V3-3.jpg';
+    book_page1_caption = "You Can Draw- Volume 3 (6+ to 8+ yrs)";
+    book_page2_caption = "You Can Draw- Volume 3 (6+ to 8+ yrs)";
+    book_page3_caption = "You Can Draw- Volume 3 (6+ to 8+ yrs)";
+  }
+  if(coverpage == "V4.jpg"){
+    src1 = 'Assets/pages/V4-1.jpg';
+    src2 = 'Assets/pages/V4-2.jpg';
+    src3 = 'Assets/pages/V4-3.jpg';
+    book_page1_caption = "You Can Draw- Volume 4 (7+ to 9+ yrs)";
+    book_page2_caption = "You Can Draw- Volume 4 (7+ to 9+ yrs)";
+    book_page3_caption = "You Can Draw- Volume 4 (7+ to 9+ yrs)";
+  }
+  if(coverpage == "V5.jpg"){
+    src1 = 'Assets/pages/V5-1.jpg';
+    src2 = 'Assets/pages/V5-2.jpg';
+    src3 = 'Assets/pages/V5-3.jpg';
+    book_page1_caption = "You Can Draw- Volume 5 (8+ to 10+ yrs)";
+    book_page2_caption = "You Can Draw- Volume 5 (8+ to 10+ yrs)";
+    book_page3_caption = "You Can Draw- Volume 5 (8+ to 10+ yrs)";
+  }
+  if(coverpage == "V6.jpg"){
+    src1 = 'Assets/pages/V6-1.jpg';
+    src2 = 'Assets/pages/V6-2.jpg';
+    src3 = 'Assets/pages/V6-3.jpg';
+    book_page1_caption = "You Can Draw- Volume 6 (9+ to 11+ yrs)";
+    book_page2_caption = "You Can Draw- Volume 6 (9+ to 11+ yrs)";
+    book_page3_caption = "You Can Draw- Volume 6 (9+ to 11+ yrs)";
+  }
+  document.getElementById("img_page1").src = src1;
+  document.getElementById("img_page2").src = src2;
+  document.getElementById("img_page3").src = src3;
+  document.getElementById("book_page1_caption").innerHTML = book_page1_caption;
+  document.getElementById("book_page2_caption").innerHTML = book_page2_caption;
+  document.getElementById("book_page3_caption").innerHTML = book_page3_caption;
+  document.getElementById("modal_preview").style.display = "block";
+}
+
+//script for slideshow inside modal pop up
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("pages");
+  //var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  /*for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }*/
+  x[slideIndex-1].style.display = "block";  
+  /*dots[slideIndex-1].className += " w3-red";*/
+}
+//end- of script for slideshow
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+/* change nav item colors on scrolling past the header*/
+const myNav = document.getElementById("myNavbar")
+
+window.onscroll = function() {
+  if(window.scrollY > window.innerHeight){
+    myNav.classList.remove('w3-text-white');
+    myNav.classList.add('scrolled');
+  }else{
+    myNav.classList.remove('scrolled');
+    myNav.classList.add('w3-text-white');
+  }
+}
+function showDescription(descId){
+  var x = document.getElementById(descId);
+  if(x.className.indexOf('w3-show') == -1){
+    x.className +=" w3-show";
+  }
+  else{
+    x.className =x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
