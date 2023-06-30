@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chitrali Publications- You Can Draw</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
+<script src="https://kit.fontawesome.com/2337362ad2.js" crossorigin="anonymous"></script>
+<style>  
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+</style>    
+</head>
+<body>
+    <div class="w3-top">
+        <div id="myNavbar" class="w3-bar w3-text-black">
+          <a href="index.html#home" class="w3-bar-item w3-button w3-wide"><img id="logo" src="Assets/tinified/logo-100w.jpg" width="75px"></a>
+          <!-- Right-sided navbar links -->
+          <div class="w3-right w3-hide-small">
+            <a href="index.html#about" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="index.html#books" class="w3-bar-item w3-button"><i class="fa-solid fa-book-open"></i> BOOKS</a>
+            <a href="index.html#schools" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SCHOOLS</a>
+            <!--<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>-->
+            <a href="index.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+          </div>
+          <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      
+          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+    </div>
+      
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large" 
+    style="height:50vh;width:35vw;background-color:#98CA32;display:none" id="mySidebar">
+    <div class="w3-bar w3-dark-grey w3-padding">
+        <div class="w3-bar-item w3-display-container">
+            <div class="w3-display-left">CLOSE</div>
+            <div onclick="w3_close()" class="w3-button w3-display-right" title="close Sidebar" style="padding-bottom:14px;">
+            <i class="fa-solid fa-square-xmark fa-xl" style="color: #ff9800;"></i>
+            </div>
+        </div>    
+    </div>
+    <div class="w3-bar-block">
+    <!--<a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close <i class="fa-solid fa-square-xmark fa-2xl" style="color: #ff9800"></i></a>-->  
+        <a href="index.html#home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-opacity w3-border-bottom">HOME</a>
+        <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-opacity w3-border-bottom">ABOUT</a>
+        <a href="index.html#books" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-opacity w3-border-bottom">BOOKS</a>
+        <a href="index.html#schools" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-opacity w3-border-bottom">SCHOOLS</a>
+        <!--<a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-opacity w3-border-bottom">PRICING</a>-->
+        <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-opacity w3-border-bottom">CONTACT</a>
+    </div>
+    </nav>    
+    <div class="w3-container" style="padding:128px 16px" id="privacy">
+        <div class="w3-panel w3-light-grey">
+            <h1 class="w3-text-dark-grey">Privacy Policy</h1>
+        </div>
+        <div class="w3-panel w3-padding">
+            <p>Chitralipublications.com is committed to protecting your privacy. We understand your concern about the personal information you submit on our website.</p>
+
+            <p>This document explains every aspect of our Privacy Policy to you. Your visit and actions undertaken on our site will be governed by the following policy.</p>
+
+            <p>We reserve the right to add, modify, delete or change the contents of this Privacy Policy as may be felt necessary by us though the changes will be consistent with the spirit of the terms presented below.</p>
+
+            <strong>Information Collected</strong><br>
+            <p>To enable you to place an order on our site, we need to have some basic information about you like your name, e-mail address & mailing address. Information about you may also be required to notify you about functionality changes on our website, new services and special offers you may find of value. It must be clarified here that registration is not required for visitors to the site who do not require any specific services.</p>
+
+            <strong>Information Sharing</strong><br>
+            <p>We do not rent, sell, barter or trade the information you have provided to third parties. However, should it become necessary, we may need to share your information to some extent with vendors, representatives of the law or government, for fraud detection, and for the safety of our site, employees, management, users, members and other affiliates associated with us.</p>
+            
+            <strong>Product Availability</strong><br>
+            <p>We endeavour to present the most recent, most accurate, and most reliable information on our website at all times. However, there may be occasions when some of the information featured on our site may contain incomplete data, typographical errors, or inaccuracies. Any errors are wholly unintentional and we apologize if erroneous information is reflected in merchandise price or item availability. However, please be aware that we present our content ‘as is’ and make no claims to its accuracy, either expressed or implied. We reserve the right to amend errors or to update product information at any time without prior notice.</p>
+
+            <strong>Links with other sites</strong><br>
+            <p>Our site may contain links which may lead you to other sites which may have their own privacy policies over which we have no control. Please understand that once you leave our site, our Privacy Policy will no longer apply.</p>
+
+            <strong>Disclaimer:</strong><br>
+            <p>Chitrali Publications makes no warranties or representations of any kind concerning the accuracy or suitability of the information contained on this website for any purpose. All such information is provided “as is” and with a specific disclaimer of any warranties of merchantability, fitness for purpose, title and/or non-infringement. Chitrali Publications makes no warranties or representations of any kind that the services provided by this website will be uninterrupted, error-free or that the website or the server that hosts the website are free from viruses or other forms of harmful computer code.</p>
+
+            <p>In no event shall Chitrali Publications, its employees or agents be liable for any direct, indirect or consequential damages resulting from the use of this website. This exclusion and limitation only applies to the extent permitted by law and is without prejudice to any express provisions to the contrary in any written licence or subscription agreement from Chitrali Publications in respect of the use of any online service provided via this website. Hypertext links to other web locations are for the convenience of users and do not constitute any endorsement or authorization by Chitrali Publications.</p>
+        </div>
+    </div>
+    
+    <footer class="w3-light-green" style="margin-top:-50px;">
+      <div class="w3-row-padding">    
+        <div class="w3-margin-top w3-center"><a href="index.html#home" class="w3-button w3-light-grey">
+          <i class="fa fa-arrow-up"></i>To the top</a></div>    
+        <div class="w3-col s4">
+          <p><i class="fa-solid fa-keyboard"></i><a href="index.html#contact" class="w3-hover-text-red" style="text-decoration:none;cursor:pointer;"> Contact Us</a></p>
+          <p><i class="fa fa-phone fa-fw"></i> Phone: <span class="w3-monospace">9123878508 / 9903478327</span></p>
+          <p><i class="fa-brands fa-whatsapp fa-lg"></i> Whatsapp: <span class="w3-monospace">9123878508</span></p>
+          <p><i class="fa fa-envelope fa-fw"> </i> Email: rajarshidattaroy@mail.com</p>
+        </div>    
+        <div class="w3-col s4 w3-padding-16" style="padding-left:0px;padding-right:0px;">
+          <div class="w3-container" style="padding-left:2px; padding-right:2px;padding-bottom:8px;">
+            <div class="w3-container w3-center" style="padding-left:0px; padding-right:0px;">
+              <h5>Author</h5>
+              <img class="w3-circle" src="Assets/tinified/rdroy2.jpg" alt="Author Rd Roy" style="width:100%">
+              <h6 style="font-weight:bold;">RD Roy</h6>    
+              <a class="w3-deep-orange" style="text-decoration:none;font-size:smaller; padding:8px 4px;margin-bottom:8px!important;" href="author.html">Read More</a>          
+            </div>
+    
+          </div>
+        </div>
+        <div class="w3-col s4">
+          <div class="w3-right">
+            <p>Chitrali Publications © <span class="w3-monospace">2023</span> All Rights Reserved | <a href="privacy_policy.html" 
+            style="text-decoration:none;cursor:pointer;">Privacy Policy</a></p>
+            <p style="font-size:small;">Site designed by: ADRoy <br><i class="fa-brands fa-whatsapp fa-lg"></i> Whatsapp: <span class="w3-monospace">7760396882</span></p>       
+            
+          </div> 
+          
+        </div>
+      </div>
+      
+    </div>
+    </footer>
+    
+    <script>
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+    </script>
+</body>
+</html>
