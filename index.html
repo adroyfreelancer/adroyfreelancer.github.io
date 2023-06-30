@@ -69,7 +69,10 @@ body, html {
   /*background:rgb(218, 212, 247);   */
   color:#341809;
 }
-
+.menuItem_bg_color{
+  /*background-color: rgb(218, 212, 247, 0.5);  */
+  background-color: rgb(152, 202, 50);
+}
 .google-map {
     border:2px solid red;
     padding-bottom: 50%;
@@ -91,10 +94,10 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div id="myNavbar" class="w3-bar w3-text-white">
-    <a href="#home" class="w3-bar-item w3-button w3-wide"><img id="logo" src="Assets/tinified/logo-100w.jpg" width="75px"></a>
+    <a href="#home" class="w3-bar-item w3-wide"><img id="logo" src="Assets/tinified/logo-100w.jpg" width="75px"></a>
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button menuItem">ABOUT</a>
+    <div id="navmenu" class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa-solid fa-highlighter"></i> ABOUT</a>
       <a href="#books" class="w3-bar-item w3-button"><i class="fa-solid fa-book-open"></i> BOOKS</a>
       <a href="#schools" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SCHOOLS</a>
       <!--<a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PRICING</a>-->
@@ -524,11 +527,11 @@ style="height:40vh;width:35vw;background-color:#98CA32;display:none" id="mySideb
 </div>
 
 <!-- Footer -->
-<footer class="w3-light-green" style="margin-top:-50px;">
+<footer class="w3-light-green">
   <div class="w3-row-padding">    
     <div class="w3-margin-top w3-center w3-hide-large"><a href="#home" class="w3-button w3-light-grey">
       <i class="fa fa-arrow-up"></i>To the top</a></div>    
-    <div class="w3-col s4">
+    <div class="w3-col s4 w3-padding-16">
       <p><i class="fa-solid fa-keyboard"></i><a href="#contact" class="w3-hover-text-red" style="text-decoration:none;cursor:pointer;"> Contact Us</a></p>
       <p><i class="fa fa-phone fa-fw"></i> Phone: <span class="w3-monospace">9123878508 / 9903478327</span></p>
       <p><i class="fa-brands fa-whatsapp fa-lg"></i> Whatsapp: <span class="w3-monospace">9123878508</span></p>
@@ -538,7 +541,7 @@ style="height:40vh;width:35vw;background-color:#98CA32;display:none" id="mySideb
       <div class="w3-container" style="padding-left:2px; padding-right:2px;padding-bottom:8px;">
         <div class="w3-container w3-center" style="padding-left:0px; padding-right:0px;">
           <h5>Author</h5>
-          <img class="w3-circle" src="Assets/tinified/rdroy.jpg" alt="Avatar" style="width:100%">
+          <img class="w3-circle" src="Assets/tinified/rdroy.jpg" alt="Avatar" style="width:60%">
           <h6 style="font-weight:bold;">RD Roy</h6>
 
           <a class="w3-deep-orange" style="text-decoration:none;font-size:smaller; padding:8px 4px;margin-bottom:8px!important;" href="author.html">Read More</a>          
@@ -546,11 +549,11 @@ style="height:40vh;width:35vw;background-color:#98CA32;display:none" id="mySideb
 
       </div>
     </div>
-    <div class="w3-col s4">
+    <div class="w3-col s4 w3-padding-16">
       <div class="w3-right">
         <p>Chitrali Publications © <span class="w3-monospace">2023</span> All Rights Reserved | <a href="privacy_policy.html" 
         style="text-decoration:none;cursor:pointer;">Privacy Policy</a></p>
-        <p style="font-size:small;">Site designed by: ADRoy <br><i class="fa-brands fa-whatsapp fa-lg"></i> Whatsapp: <span class="w3-monospace">7760396882</span></p>       
+        <p>Site designed by: <span style="font-weight:bold;">AD Roy</span><br><i class="fa-brands fa-whatsapp fa-lg"></i> Whatsapp: <span class="w3-monospace">7760396882</span></p>       
         
       </div> 
       
@@ -673,14 +676,23 @@ function w3_close() {
 }
 /* change nav item colors on scrolling past the header*/
 const myNav = document.getElementById("myNavbar")
+const navmenu_items = document.querySelectorAll("div#navmenu > a");
 
 window.onscroll = function() {
   if(window.scrollY > window.innerHeight){
     myNav.classList.remove('w3-text-white');
     myNav.classList.add('scrolled');
+
+    navmenu_items.forEach((menuItem) => {
+    menuItem.classList.add('menuItem_bg_color');
+  });
   }else{
     myNav.classList.remove('scrolled');
     myNav.classList.add('w3-text-white');
+
+    navmenu_items.forEach((menuItem) => {
+    menuItem.classList.remove('menuItem_bg_color');
+  });
   }
 }
 function showDescription(descId){
