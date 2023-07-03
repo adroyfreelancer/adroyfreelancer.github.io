@@ -29,12 +29,13 @@ body, html {
 }
 
 /* Full height image header */
-.bgimg-1 {
+.bgimg-1 {  
   background-position: center;
   background-size:cover;
   background-image: url("banner-background.jpg");  
   min-height: 100%;
 }
+/*
 .bgimg-1::before {
     content: "";
     position: absolute;
@@ -43,7 +44,8 @@ body, html {
     bottom: 0px;
     left: 0px;
     background-color: rgba(0,0,0,0.6);
-}
+}*/
+
 .w3-bar .w3-button {
   padding: 16px 16px 5px 16px;
 }
@@ -70,8 +72,8 @@ body, html {
   color:#341809;
 }
 .menuItem_bg_color{
-  /*background-color: rgb(218, 212, 247, 0.5);  */
-  background-color: rgb(152, 202, 50);
+  /*background-color: rgb(152, 202, 50);*/
+  background-color:#f9f9fc;
 }
 .google-map {
     border:2px solid red;
@@ -113,13 +115,14 @@ body, html {
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large" 
-style="height:40vh;width:35vw;background-color:#98CA32;display:none" id="mySidebar">
-  <div class="w3-bar w3-dark-grey w3-padding">
-    <div class="w3-bar-item w3-display-container">
-        <div class="w3-display-left">CLOSE</div>
+style="height:290px;width:35vw;background-color:#98CA32;display:none" id="mySidebar">
+  <div class="w3-bar w3-light-green">
+    <div class="w3-bar-item" style="padding:8px 8px;">
+        <!--<div class="w3-display-left w3-margin-right" style="font-size:medium;">CLOSE</div>
         <div onclick="w3_close()" class="w3-button w3-display-right" title="close Sidebar" style="padding-bottom:14px;">
         <i class="fa-solid fa-square-xmark fa-xl" style="color: #ff9800;"></i>
-        </div>
+        </div>-->
+        <div onclick="w3_close()" style="width:100%;padding-left:8px;">CLOSE&nbsp;&nbsp;<i class="fa-solid fa-square-xmark fa-xl" style="color: #ff9800;"></i></div>
     </div>    
   </div>
   <div class="w3-bar-block">
@@ -134,9 +137,9 @@ style="height:40vh;width:35vw;background-color:#98CA32;display:none" id="mySideb
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container" id="home">
+<!--<header class="bgimg-1 w3-display-container" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px;">
-    <div class="w3-jumbo w3-hide-small" style="width:100%;font-weight:800;">Chitrali Publications</div>
+    <div class="w3-jumbo w3-hide-small" style="width:100%;font-weight:800;color:#ff9800;">Chitrali Publications</div>
     <div class="w3-xxxlarge w3-hide-large w3-hide-medium" style="width:100%;font-weight:600;">Chitrali Publications</div><br>
     <div class="w3-container">
       <span class="w3-xxxlarge w3-hide-small" style="font-weight:800;">You Can Draw!</span>
@@ -145,20 +148,27 @@ style="height:40vh;width:35vw;background-color:#98CA32;display:none" id="mySideb
     </div>
     
     <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Explore to know more</a></p>
-  </div> 
+  </div>     
   
+</header>-->
+<header class="bgimg-1 w3-container w3-text-white w3-padding-64" id="home">
+     
+      <div class="w3-hide-small w3-padding">  <!--style="padding-top:130px!important;"-->
+        <p class="w3-jumbo" style="font-weight:800;color:#f5a835;">Chitrali Publications</p>
+        <p class="w3-xxxlarge" style="font-weight:800;">You Can Draw!</p>
+        <p class="w3-xxlarge">Art book series for children.</p>
+      </div>
+      <div class="w3-hide-large w3-hide-medium w3-padding"> <!--style="padding-top:130px!important;"--> 
+        <p class="w3-xxxlarge" style="font-weight:600;color:#f5a835;">Chitrali Publications</p>
+        <p class="w3-xxlarge" style="font-weight:600;">You Can Draw!</p>
+        <p class="w3-xlarge">Art book series for children.</p>
+      </div>      
+      <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-left w3-opacity w3-hover-opacity-off">Explore to know more</a></p>
     
-  <!--
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>-->
+    
+    
+  
 </header>
-
 <!-- About Section -->
 <div class="w3-container" style="padding:128px 16px" id="about">
   <h3 class="w3-center w3-text-indigo" style="font-weight:bolder;">YOU CAN DRAW!</h3>
@@ -529,7 +539,7 @@ style="height:40vh;width:35vw;background-color:#98CA32;display:none" id="mySideb
 <!-- Footer -->
 <footer class="w3-light-green">
   <div class="w3-row-padding">    
-    <div class="w3-margin-top w3-center w3-hide-large"><a href="#home" class="w3-button w3-light-grey">
+    <div class="w3-margin-top w3-center w3-hide-large"><a href="#home" class="w3-button" style="background-color:#c9ec83;">
       <i class="fa fa-arrow-up"></i>To the top</a></div>    
     <div class="w3-col s4 w3-padding-16">
       <p><i class="fa-solid fa-keyboard"></i><a href="#contact" class="w3-hover-text-red" style="text-decoration:none;cursor:pointer;"> Contact Us</a></p>
@@ -542,9 +552,9 @@ style="height:40vh;width:35vw;background-color:#98CA32;display:none" id="mySideb
         <div class="w3-container w3-center" style="padding-left:0px; padding-right:0px;">
           <h5>Author</h5>
           <img class="w3-circle" src="Assets/tinified/rdroy.jpg" alt="Avatar" style="width:60%">
-          <h6 style="font-weight:bold;">RD Roy</h6>
+          <h6 style="font-weight:bold;">R.D. Roy</h6>
 
-          <a class="w3-deep-orange" style="text-decoration:none;font-size:smaller; padding:8px 4px;margin-bottom:8px!important;" href="author.html">Read More</a>          
+          <a style="text-decoration:none;background-color:#c9ec83;padding:8px 4px;margin-bottom:8px!important;" href="author.html">Read More</a>          
         </div>
 
       </div>
@@ -553,7 +563,7 @@ style="height:40vh;width:35vw;background-color:#98CA32;display:none" id="mySideb
       <div class="w3-right">
         <p>Chitrali Publications © <span class="w3-monospace">2023</span> All Rights Reserved | <a href="privacy_policy.html" 
         style="text-decoration:none;cursor:pointer;">Privacy Policy</a></p>
-        <p>Site designed by: <span style="font-weight:bold;">AD Roy</span><br><i class="fa-brands fa-whatsapp fa-lg"></i> Whatsapp: <span class="w3-monospace">7760396882</span></p>       
+        <p>Site designed by: <span style="font-weight:bold;">A.D. Roy</span><br><i class="fa-brands fa-whatsapp fa-lg"></i> Whatsapp: <span class="w3-monospace">7760396882</span></p>       
         
       </div> 
       
